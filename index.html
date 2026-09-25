@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReleaseReady</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1 class="logo">Release<span>Ready</span></h1>
+      <p class="tagline">Paste a GitHub repo URL — get a changelog, risk scan, and deploy checklist before you ship.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="card form-card">
+      <form id="report-form">
+        <div class="field-group">
+          <label for="repo-url">Repository URL</label>
+          <input
+            type="text"
+            id="repo-url"
+            placeholder="https://github.com/owner/repo"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <div class="field-group">
+          <label for="since-tag">Since <span class="optional">(optional)</span></label>
+          <input
+            type="text"
+            id="since-tag"
+            placeholder="e.g. v1.4.0 or a commit SHA"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <button type="submit" id="generate-btn">
+          <svg class="btn-icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/>
+            <path d="M6.5 5.25a.75.75 0 0 1 1.2-.6l3 2.25a.75.75 0 0 1 0 1.2l-3 2.25a.75.75 0 0 1-1.2-.6v-4.5Z"/>
+          </svg>
+          Generate Report
+        </button>
+      </form>
+    </section>
+
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p class="loading-text">Analysing repository&hellip;</p>
+    </div>
+
+    <div id="results" class="hidden">
+
+      <section class="card" id="changelog-section">
+        <h2 class="section-title">
+          <span class="section-icon icon-changelog"></span>
+          Changelog
+        </h2>
+        <div class="changelog-group" id="breaking-group">
+          <h3 class="group-label breaking">Breaking Changes</h3>
+          <ul id="breaking-list" class="commit-list"></ul>
+        </div>
+        <div class="changelog-group" id="features-group">
+          <h3 class="group-label features">Features</h3>
+          <ul id="features-list" class="commit-list"></ul>
+        </div>
+        <div class="changelog-group" id="fixes-group">
+          <h3 class="group-label fixes">Fixes</h3>
+          <ul id="fixes-list" class="commit-list"></ul>
+        </div>
+      </section>
+
+      <section class="card" id="risks-section">
+        <h2 class="section-title">
+          <span class="section-icon icon-risk"></span>
+          Risks Detected
+        </h2>
+        <div id="risks-list"></div>
+      </section>
+
+      <section class="card" id="checklist-section">
+        <h2 class="section-title">
+          <span class="section-icon icon-check"></span>
+          Deployment Checklist
+        </h2>
+        <ul id="checklist-list" class="checklist"></ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>ReleaseReady &mdash; demo mode &mdash; no live API calls are made</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
