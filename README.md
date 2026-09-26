@@ -79,3 +79,94 @@ release-ready/
 ├── script.js
 ├── sources_used
 └── style.css
+The evidence/bob-task-session/ directory contains evidence of IBM Bob's use during development.
+
+The sources_used file contains the sources used for the project's demonstration data.
+
+▶️ Running the Project
+
+ReleaseReady is a static web application and does not require an installation or build process.
+
+You can run the application by opening:
+
+index.html
+
+directly in a web browser.
+
+The project is also deployed using GitHub Pages.
+
+📊 Current Prototype
+
+The current version uses prepared sample release-analysis data stored locally in the front-end.
+
+It does not currently make live GitHub API calls and does not use a backend server.
+
+This allows the demonstration to run entirely in the browser without external dependencies.
+
+The repository URL and optional starting-point inputs are part of the prototype's interface, while the demonstration report is populated using the prepared local data.
+
+🤖 IBM Bob Usage
+
+IBM Bob was used throughout the development of ReleaseReady.
+
+Bob assisted with creating and refining the three core application files:
+
+index.html
+style.css
+script.js
+
+Bob was used to develop the dashboard structure, styling, JavaScript functionality, repository input interaction, changelog presentation, risk display, deployment checklist, and demonstration data.
+
+The Bob task session included completed tasks for creating the HTML layout, CSS styling, and JavaScript functionality.
+
+Evidence of Bob's development work is included in:
+
+evidence/bob-task-session/
+🔮 Future Development
+
+Future versions of ReleaseReady could extend the prototype with:
+
+Live GitHub repository analysis
+Automatic commit and pull request analysis
+Automated changelog generation
+More advanced deployment-risk detection
+Integration with repository and deployment services
+Automated release-readiness reports
+🔒 Security
+
+This project uses the IBM Hackathon GitHub Project Template and keeps its security files:
+
+.gitignore
+.bobignore
+.env.example
+SECURITY.MD
+
+These files are intended to help prevent accidental credential commits and protect sensitive information during development.
+
+Security Guidelines
+
+Before committing changes:
+
+Review changes for sensitive information.
+Do not hardcode API keys or passwords.
+Make sure .env is not included in staged changes.
+Do not commit credentials or other sensitive information.
+Use environment variables for credentials when credentials are required.
+
+The current ReleaseReady prototype does not require API credentials because it does not make live external API calls.
+
+For the full project security guidance, see SECURITY.MD.
+
+📋 IBM Hackathon Template
+
+This repository was created using the IBM Hackathon GitHub Project Template.
+
+The template provides pre-configured security files and guidance for safe development during the hackathon.
+
+The project's application code has been added alongside the template files without removing the security configuration.
+
+👤 Project
+
+ReleaseReady
+
+A hackathon project developed with assistance from IBM Bob.
