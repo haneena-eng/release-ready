@@ -82,7 +82,7 @@ release-ready/
 ```
 The evidence/bob-task-session/ directory contains evidence of IBM Bob's use during development.
 
-▶️ Running the Project
+## ▶️ Running the Project
 
 ReleaseReady is a static web application and does not require an installation or build process.
 
@@ -94,7 +94,7 @@ directly in a web browser.
 
 The project is also deployed using GitHub Pages.
 
-📊 Current Prototype
+## 📊 Current Prototype
 
 The current version uses prepared sample release-analysis data stored locally in the front-end.
 
@@ -104,7 +104,7 @@ This allows the demonstration to run entirely in the browser without external de
 
 The repository URL and optional starting-point inputs are part of the prototype's interface, while the demonstration report is populated using the prepared local data.
 
-🤖 IBM Bob Usage
+## 🤖 IBM Bob Usage
 
 IBM Bob was used throughout the development of ReleaseReady.
 
@@ -121,7 +121,7 @@ The Bob task session included completed tasks for creating the HTML layout, CSS 
 Evidence of Bob's development work is included in:
 
 evidence/bob-task-session/
-🔮 Future Development
+## 🔮 Future Development
 
 Future versions of ReleaseReady could extend the prototype with:
 
@@ -131,7 +131,7 @@ Automated changelog generation
 More advanced deployment-risk detection
 Integration with repository and deployment services
 Automated release-readiness reports
-🔒 Security
+## 🔒 Security
 
 This project uses the IBM Hackathon GitHub Project Template and keeps its security files:
 
@@ -156,7 +156,7 @@ The current ReleaseReady prototype does not require API credentials because it d
 
 For the full project security guidance, see SECURITY.md.
 
-📋 IBM Hackathon Template
+## 📋 IBM Hackathon Template
 
 This repository was created using the IBM Hackathon GitHub Project Template.
 
@@ -164,7 +164,7 @@ The template provides pre-configured security files and guidance for safe develo
 
 The project's application code has been added alongside the template files without removing the security configuration.
 
-👤 Project
+## 👤 Project
 
 ReleaseReady
 
