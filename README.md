@@ -160,15 +160,8 @@ For the full project security guidance, see SECURITY.md.
 
 This repository was created using the IBM Hackathon GitHub Project Template.
 
-The template provides pre-configured security files and guidance for safe development during the hackathon.
-
-The project's application code has been added alongside the template files without removing the security configuration.
-
 ## 👤 Project
 
 ReleaseReady
-
-A hackathon project developed with assistance from IBM Bob.
-
 
 A hackathon project developed with assistance from IBM Bob.
