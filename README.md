@@ -1,68 +1,81 @@
-# IBM Hackathon GitHub Project Template
+# ReleaseReady
 
-This GitHub project template is for IBM Hackathon projects. It includes pre-configured security files to help prevent accidental credential commits and potential account suspension during the hackathon.
+ReleaseReady is a developer-focused web application designed to help organize software release preparation into one simple dashboard.
 
-## 🚀 Quick Start
+It brings together a release **changelog**, **deployment risks**, and a **pre-deployment checklist** so developers can review important release information before shipping.
 
-1. **Use this template to create your project:**
-   - Click "Use this template" button above and select "Create a new repository"
-   - Name your repository
-   - Click "Create repository"
+## 🚀 Live Demo
 
-2. **Clone your new repository:**
+**GitHub Pages:**  
+https://haneena-eng.github.io/release-ready/
 
-   ```bash
-   git clone https://github.com/HACKATHON-ORG/your-repo-name.git
-   cd your-repo-name
-   ```
+## 💡 Problem
 
-3. **Set up environment variables:**
+Preparing a software release can require developers to review many changes, identify potential deployment risks, and remember multiple pre-deployment steps.
 
-   ```bash
-   # Copy the example file
-   cp .env.example .env
+Important information can be scattered across commits, pull requests, project configuration, and documentation, making release preparation harder to review quickly.
 
-   # Edit .env with your actual credentials
-   # Use your preferred editor (nano, vim, code, etc.)
-   nano .env
-   ```
+## ✨ Solution
 
-4. **Verify .gitignore is working:**
+ReleaseReady organizes release-readiness information into a focused dashboard with three main sections:
 
-   ```bash
-   # This should NOT show .env file
-   git status
+### 📝 Changelog
 
-   # This should confirm .env is ignored
-   git check-ignore -v .env
-   ```
+Changes are organized into:
 
-5. **Start developing!**
+- **Features**
+- **Fixes**
+- **Breaking Changes**
 
-## 🔒 Security Features
+Each change can include its reference and date to make the release easier to scan.
 
-This template includes:
+### ⚠️ Risks Detected
 
-- **`.gitignore`** - Prevents committing credentials and live session files
-- **`.bobignore`** - Prevents AI assistants from logging credentials
-- **`.env.example`** - Template for your environment variables
+Potential release concerns are displayed with:
 
-## 📋 Before Every Commit
+- Risk categories
+- Severity levels
+- Relevant information about the potential issue
 
-Always run this checklist:
+This helps developers identify areas that may need attention before deployment.
 
-- [ ] Reviewed `git diff` for sensitive data
-- [ ] No hardcoded API keys or passwords
-- [ ] `.env` file is NOT in staged changes
-- [ ] No files with "credential" or "secret" in name
-- [ ] Used environment variables for all credentials
+### ✅ Deployment Checklist
 
-## 🆘 Need Help?
+The checklist provides actionable pre-deployment steps, including:
 
-- Read [SECURITY.md](SECURITY.MD) for detailed guidelines
-- Contact hackathon support through mentor channel
-- Ask in the hackathon Slack workspace
+- Required or optional status
+- The source or reason for each task
+- Interactive checkboxes for tracking completion
 
----
+## 🛠️ Technology
 
-**Remember:** Security is everyone's responsibility. When in doubt, ask for help!
+ReleaseReady was intentionally built as a lightweight static web application using:
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+The project does **not** require:
+
+- React
+- Node.js
+- npm
+- Build tools
+- A backend server
+
+## 📁 Project Structure
+
+```text
+release-ready/
+├── evidence/
+│   └── bob-task-session/
+├── .bobignore
+├── .env.example
+├── .gitignore
+├── README.md
+├── SECURITY.MD
+├── index.html
+├── script.js
+├── sources_used
+└── style.css
