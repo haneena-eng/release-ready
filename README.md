@@ -78,10 +78,9 @@ release-ready/
 ├── index.html
 ├── script.js
 ├── sources_used
-└── style.css
+└── style.css:
+```
 The evidence/bob-task-session/ directory contains evidence of IBM Bob's use during development.
-
-The sources_used file contains the sources used for the project's demonstration data.
 
 ▶️ Running the Project
 
@@ -139,7 +138,7 @@ This project uses the IBM Hackathon GitHub Project Template and keeps its securi
 .gitignore
 .bobignore
 .env.example
-SECURITY.MD
+SECURITY.md
 
 These files are intended to help prevent accidental credential commits and protect sensitive information during development.
 
@@ -155,7 +154,7 @@ Use environment variables for credentials when credentials are required.
 
 The current ReleaseReady prototype does not require API credentials because it does not make live external API calls.
 
-For the full project security guidance, see SECURITY.MD.
+For the full project security guidance, see SECURITY.md.
 
 📋 IBM Hackathon Template
 
@@ -168,5 +167,8 @@ The project's application code has been added alongside the template files witho
 👤 Project
 
 ReleaseReady
+
+A hackathon project developed with assistance from IBM Bob.
+
 
 A hackathon project developed with assistance from IBM Bob.
